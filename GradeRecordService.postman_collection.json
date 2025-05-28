@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "d7d1bde6-9bbb-4d55-a8a9-d7e3df270f12",
+		"name": "GradeRecordService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33559204"
+	},
+	"item": [
+		{
+			"name": "LISTADO_CALIFICACION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/grade-logs/classroom-period?classroomId=3&periodId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"grade-logs",
+						"classroom-period"
+					],
+					"query": [
+						{
+							"key": "classroomId",
+							"value": "3"
+						},
+						{
+							"key": "periodId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FILTRO_LIST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records/6836a8b743973f1f67afe6e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records",
+						"6836a8b743973f1f67afe6e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"classroomId\": 1,\r\n  \"periodId\": 2,\r\n  \"createdBy\": \"admin@colegio.com\",\r\n  \"observation\": \"Evaluación de cierre de trimestre\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"classroomId\": 2,\r\n  \"periodId\": 2,\r\n  \"createdBy\": \"nuevo_admin@colegio.com\",\r\n  \"observation\": \"ACTUALIZADO dasadse periodbh 22\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records/6836c74d2c544c62125aa84c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records",
+						"6836c74d2c544c62125aa84c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_LOGIC",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records/disable/6836a8b743973f1f67afe6e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records",
+						"disable",
+						"6836a8b743973f1f67afe6e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_FISIC",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records/6836c55e07fcdfdfb1c58680",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records",
+						"6836c55e07fcdfdfb1c58680"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESTORE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/classroom-grade-records/restore/6836a8b743973f1f67afe6e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"classroom-grade-records",
+						"restore",
+						"6836a8b743973f1f67afe6e7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
