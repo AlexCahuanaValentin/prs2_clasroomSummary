@@ -1,0 +1,34 @@
+{
+    "classrooms": [
+        {
+            "id": 1,
+            "name": "Primer grado A - Primaria"
+        },
+        {
+            "id": 2,
+            "name": "Primer grado B - Primaria"
+        },
+        {
+            "id": 3,
+            "name": "Segundo grado A - Primaria"
+        },
+        {
+            "id": 4,
+            "name": "Tercero grado A - Primaria"
+        },
+        {
+            "id": 5,
+            "name": "Cuarto grado A - Primaria"
+        }
+    ],
+    "periods": [
+        {
+            "id": 2,
+            "name": "Año Escolar 2023"
+        },
+        {
+            "id": 3,
+            "name": "Año Escolar 2024"
+        }
+    ]
+}
