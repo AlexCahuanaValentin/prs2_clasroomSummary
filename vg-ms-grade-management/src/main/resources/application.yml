@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: vg-ms-grade-management
+
+  data:
+    mongodb:
+      uri: mongodb+srv://gradeadmin:8EmFywNWZN85pVhD@grades-cluster.oginegu.mongodb.net/gradeRecordsDB?retryWrites=true&w=majority&tlsAllowInvalidHostnames=true&appName=grades-cluster
+      database: gradeRecordsDB
+
+  jackson:
+    time-zone: America/Lima  # Zona horaria local recomendada
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG

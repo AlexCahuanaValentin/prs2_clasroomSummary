@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Endpoints - Gestión de Logs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba de Endpoints</h1>
+        
+        <div class="section">
+            <h2>Crear Log</h2>
+            <form id="createLogForm">
+                <div class="form-group">
+                    <label for="studentId">ID Estudiante:</label>
+                    <input type="number" id="studentId" required>
+                </div>
+                <div class="form-group">
+                    <label for="gradeId">ID Calificación:</label>
+                    <input type="number" id="gradeId" required>
+                </div>
+                <div class="form-group">
+                    <label for="periodId">ID Período:</label>
+                    <input type="number" id="periodId" required>
+                </div>
+                <div class="form-group">
+                    <label for="teacherCoursesClassroom">ID Profesor-Curso-Aula:</label>
+                    <input type="number" id="teacherCoursesClassroom" required>
+                </div>
+                <div class="form-group">
+                    <label for="action">Acción:</label>
+                    <input type="text" id="action" required>
+                </div>
+                <div class="form-group">
+                    <label for="details">Detalles:</label>
+                    <textarea id="details" required></textarea>
+                </div>
+                <button type="submit">Crear Log</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Obtener Logs</h2>
+            <div class="buttons">
+                <button id="getAllLogs">Obtener Todos</button>
+                <button id="getById">Por ID</button>
+                <button id="getByStudentId">Por Estudiante</button>
+                <button id="getByGradeId">Por Calificación</button>
+                <button id="getByPeriodId">Por Período</button>
+                <button id="getByTeacherCoursesClassroom">Por Profesor-Curso-Aula</button>
+            </div>
+            <div id="results"></div>
+        </div>
+
+        <div class="section">
+            <h2>Eliminar Log</h2>
+            <form id="deleteLogForm">
+                <div class="form-group">
+                    <label for="deleteId">ID del Log:</label>
+                    <input type="text" id="deleteId" required>
+                </div>
+                <button type="submit">Eliminar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

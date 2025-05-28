@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: grade-record-service
+
+  data:
+    mongodb:
+      uri: mongodb+srv://gradeadmin:8EmFywNWZN85pVhD@grades-cluster.oginegu.mongodb.net/gradeRecordsDB?retryWrites=true&w=majority&tlsAllowInvalidHostnames=true&appName=grades-cluster
+      database: gradeRecordsDB
+
+logging:
+  level:
+    root: INFO
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
+    org.springframework.web.reactive: DEBUG
+    org.mongodb.driver: INFO
