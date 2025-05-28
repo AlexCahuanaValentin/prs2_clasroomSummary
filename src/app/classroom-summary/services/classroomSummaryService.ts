@@ -1,6 +1,6 @@
 import { ClassroomGradeRecord } from './../types/classroomSummaryTypes';
 
-const API_BASE = "http://localhost:8088/api/classroom-grade-records";
+const API_BASE = "https://refactored-goldfish-9p9q7r797wxh74wp-8088.app.github.dev/api/classroom-grade-records";
 
 /**
  * Obtener resumen por ID
